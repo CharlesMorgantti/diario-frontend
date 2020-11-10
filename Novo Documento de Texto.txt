@@ -1,0 +1,62 @@
+{e => this.handleChange(e, i)}
+
+
+import React from 'react'
+
+function Navbar(){
+    return(
+<div>
+
+        <header>
+		<nav class="navbar navbar-inverse navbar navbar-dark bg-light fixed-top"
+		>
+			<div class="container-fluid" >
+				<div class="navbar-header">
+					
+					<div class="row">
+						<div class="col-2"   >
+					<a class="navbar-brand" href="/"><img src="image/imagem3.png"
+						/> </a> </div>
+						<div align="center" class="col-9" 
+						><h2 class="mt-4" >App Diário de Treinamento</h2>
+
+					</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<br/><br/>
+	<div class="layout-main mt-3">	
+	
+		<aside >
+			<nav class="sidebar sidebar-open" >
+				<ul class="nav nav-pills ">
+					<li class="nav-item" ><a class="nav-link " href="/" > <i
+							class="oi oi-home"></i> <span>Home</span>
+					</a></li>
+				</ul>
+
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active" >Sessão de Treinamento</span></li>
+					<li class="nav-item"><a class="nav-link"
+						href="#/cadastro"> <i class="oi oi-plus"></i> <span>Cadastrar</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="#/cadastro1"> <i class="oi oi-plus"></i> <span>Cadastrar1</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/sessoes"> <i class="oi oi-spreadsheet"></i>
+							<span>Consultar </span>
+					</a></li>
+				</ul>
+
+			</nav>
+		</aside>
+
+        </div>
+        </div>
+    )
+}
+
+export default Navbar

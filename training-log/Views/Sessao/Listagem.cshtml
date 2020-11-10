@@ -1,0 +1,63 @@
+
+
+@model IEnumerable<Sessao>
+
+@{
+    ViewData["Title"] = "Listagem de Sessões";
+}
+
+
+
+@if(Model ==null || (Model!=null && !Model.Any()))
+                        {
+     <div align="center" class="mt-5"> <h3>Nenhum resultado encontrado.</h3></div>
+                        }else{
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped"> 
+            <thead>
+                <tr class="">
+                    <th class="">Id</th>
+                <th class="">Usuario</th>
+                <th class="">Data Empréstimo</th>
+                <th class="">Data Devolução</th>
+                <th class="">Livro</th>
+                <th class="">Autor</th>
+                <th class="">Status</th>
+                <th style="width: 10%;"></th>
+                <th style="width: 10%;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(Sessao s in Model)
+                {
+                    
+                         <tr class=" ">
+                    <td class="">@s.Id</td>
+                    <td class="">@s.DataSessao</td>
+                    <td>@s.Observacoes</td>
+                  
+                    <td style="width: 10%;"><a href="/Emprestimo/Edicao/@s.Id" class=" btn btn-primary
+                    btn-md">Editar</a></td>
+                    <td style="width: 10%;">
+                         <form asp-action="Excluir" method="GET" 
+                         onsubmit="return confirm('Confirmar exclusão ?');">  
+                             <input type="submit" value="Excluir" class="btn btn-danger"/>
+                       <input type="hidden" name="Id" value="@s.Id">
+                    </form>
+                    </td>
+                </tr>
+}
+           
+               
+               
+             
+                
+            </tbody>
+        </table>
+
+    </div>
+</div>
+     
+                }

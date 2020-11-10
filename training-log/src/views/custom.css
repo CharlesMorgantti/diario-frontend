@@ -1,0 +1,58 @@
+.html{
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.wlis{
+    width: 50%;
+}
+.dis{
+    display:inline-block;
+}
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    margin-right: 5px;
+}
+.addIcon{
+    width: 1.5em;
+    
+}
+.navbar{
+    height: 5em;
+}
+.logo{
+    width: 4em;
+}
+.navItem{
+    font-size: 1.2em;
+ }
+ .navItem1{
+    font-size: 1.5em;
+ }
+ .nomeApp{
+     font-weight: bold;
+ }
+ .navtab{
+     border: solid grey;
+     border-width: thin;
+     height: 3em;
+     font-size: 1.1em;
+     color: grey;
+ }
+ .table th {
+    text-align: center;   
+ }
+ .table td {
+    text-align: center; 
+ }
+.table{
+    overflow: hidden; 
+}
+ .popover{
+    max-width: none;
+    position:relative;
+    z-index: 1; 
+  }

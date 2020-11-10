@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Spring-Boot Básico</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- script -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+	<header >
+	<div class="container-fluid" style="margin-top:-50px;">
+		<nav class="navbar navbar-inverse navbar navbar-dark bg-light" >
+			<div class="container-fluid " >
+				<div class="navbar-header" style="width: 100%; height:120px;">
+					
+					<div class="row">
+						<div class="col-2"   >
+					<a class="navbar-brand" href="/"><img src="imagens/imagem3.png"
+						style="width: 40%; min-width: 80px;"> </a> </div>
+						<div align="center" class="col-9" style="vertical-align: -60px;
+						"><h2 class="mt-4" style="font-weight: bolder;">App Diário de Treinamento</h2>
+	
+					</div>
+					</div>
+				</div>
+			</div>
+		</nav></div>
+	</header>
+
+	
+	<div class="layout-main">
+	
+   <aside >
+	        <nav class="sidebar sidebar-open " style="height:100%;">
+	            <ul class="nav nav-pills">
+	                <li class="nav-item">  
+	               </li>
+	            </ul>
+	
+	            <ul class="nav nav-pills">
+	             <li class="nav-item"><a class="nav-link"
+	                                        href="/index.html"> <i class="oi oi-home"></i>
+	                    <span>Home</span>
+	                </a></li>
+	                <li class="nav-item"><span class="nav-link active">Sessões de Treinamento</span></li>
+	                <li class="nav-item"><a class="nav-link"
+	                                        href="/consulta.html"> <i class="oi oi-plus"></i>
+	                    <span>Listar</span>
+	                </a></li>
+	            
+	            </ul>
+	        </nav>
+	    </aside>
+	<br><br><br><br>
+	    <section class="layout-content ">
+	
+	      <div class="mb-3 mt-4 ml-4" style="font-style:italic;">
+	        	<h3>Relatório da Sessão</h3>
+	        </div>
+	        
+	 <div class="container" id="cadastro">
+	            <form id="cadastrar">
+	                <div class="form-row">
+
+	             <!--   	 <div class="row"> -->
+	                <div class="form-group col-md-4">
+	                  
+	
+	                        <nav class="navbar navbar-light bg-light">
+	   
+	                                       <span >Data da sessão:</span> </div>
+	                              <div class="form-group col-md-4">
+	                                <input class="form-control mr-sm-2" type="date" value="2020-03-01"
+	                                       /> </div>
+	   
+	                        </nav>
+	
+	                    </div>
+	                </div>
+	
+	        			<div class="form-row">
+	                    <div class="form-group col-md-6">
+	                        Exercício 1
+	                        <input type="text" class="form-control" 
+	                               autofocus="autofocus"  value="Supino"/>
+	          
+	                    </div>
+	                    <div class="form-group col-md-2">
+	                        Carga
+	                        <input type="text" class="form-control" value="100"/>
+	                    
+	                    </div>
+	                   <div class="form-group col-md-2">
+	                       Repetições
+	                        <input type="text" class="form-control" value="10"/>
+	                    
+	                    </div>
+	                  <div class="form-group col-md-2">
+	                       Séries
+	                        <input type="text" class="form-control" value="5"/>
+	                    
+	                    </div>
+	                </div>
+	            
+				<div class="form-row">
+	                    <div class="form-group col-md-6">
+	                        Exercício 2
+	                        <input type="text" class="form-control" 
+	                               autofocus="autofocus"  value="Levantamento terra"/>
+	          
+	                    </div>
+	                    <div class="form-group col-md-2">
+	                        Carga
+	                        <input type="text" class="form-control" value="180"/>
+	                    
+	                    </div>
+	                   <div class="form-group col-md-2">
+	                       Repetições
+	                        <input type="text" class="form-control" value="5"/>
+	                    
+	                    </div>
+	                  <div class="form-group col-md-2">
+	                       Séries
+	                        <input type="text" class="form-control" value="5"/>
+	                    
+	                    </div>
+	                </div>
+	                	<div class="form-row">
+	                    <div class="form-group col-md-6">
+	                        Exercício 3
+	                        <input type="text" class="form-control" 
+	                               autofocus="autofocus"  value="Agachamento"/>
+	          
+	                    </div>
+	                    <div class="form-group col-md-2">
+	                        Carga
+	                        <input type="text" class="form-control" value="150"/>
+	                    
+	                    </div>
+	                   <div class="form-group col-md-2">
+	                       Repetições
+	                        <input type="text" class="form-control" value="10"/>
+	                    
+	                    </div>
+	                  <div class="form-group col-md-2">
+	                       Séries
+	                        <input type="text" class="form-control" value="5"/>
+	                    
+	                    </div>
+	                </div>
+	                	<div class="form-row">
+	                    <div class="form-group col-md-6">
+	                        Exercício 4
+	                        <input type="text" class="form-control" 
+	                               autofocus="autofocus"  value="Desenvolvimento para ombros"/>
+	          
+	                    </div>
+	                    <div class="form-group col-md-2">
+	                        Carga
+	                        <input type="text" class="form-control" value="80"/>
+	                    
+	                    </div>
+	                   <div class="form-group col-md-2">
+	                       Repetições
+	                        <input type="text" class="form-control" value="12"/>
+	                    
+	                    </div>
+	                  <div class="form-group col-md-2">
+	                       Séries
+	                        <input type="text" class="form-control" value="4"/>
+	                    
+	                    </div>
+	                </div>
+	                   
+	      <br>  
+	                <div class="form-row">
+	                    <div class="form-group col-md-10" align="center">
+	                       Observações:
+	                        <textarea  class="form-control"  rows="4">
+Descanso entre séries foi de 90 segundos.
+Séries de supino foram realizadas com facilidade.. aumentar a carga na próxima sessão.</textarea>
+	                
+	                    </div>
+	                    </div>
+</form><br>
+	                <div class="form-row">
+	                    <div class="form-group col-md-10" align="center">
+	                <div align="center">
+	           <a class="btn btn-primary btn-md" href="/consulta.html" role="button">Voltar&nbsp;</a>
+	        <a class="btn btn-success btn-md" href="#" role="button">Editar&nbsp;</a>
+	        <a class="btn btn-danger btn-md" href="#" role="button">Excluir</a>
+	               </div> </div></div>
+	            
+	         
+	       
+	    </section>	
+	
+	</div>
+		
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	    
+		$(function() {
+			$('[data-toggle="popover"]').popover();
+		});
+		
+		$(document).ready(function(){
+		    $(".navbar-toggle").click(function(){
+		        $(".sidebar").toggleClass("sidebar-open");
+		    })
+		});
+
+	</script>
+</body>
+</html>
